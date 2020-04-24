@@ -35,7 +35,7 @@ $preference->payer = array(
     "street_name" => 'Falsa',
     "street_number" => 123,
     "zip_code" => 1111
-   ),
+   )
 );
 
 $preference->payment_methods = array(
@@ -194,8 +194,7 @@ $preference->save();
                                       <script
                                        src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                                        data-preference-id="<?php echo $preference->id; ?>"
-                                       data-elements-color="#2D3277"
-                                       data-button-label="Pagar la compra">
+                                       data-elements-color="#2D3277">
                                       </script>
                                     </form>
                                 </div>
