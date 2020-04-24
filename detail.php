@@ -48,8 +48,6 @@ $preference->payment_methods = array(
   "installments" => '6'
 );
 
-
-$preference->external_reference ='1234';
 $preference->save();
 ?>
 
