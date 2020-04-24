@@ -3,16 +3,19 @@
 require __DIR__ .  '/vendor/autoload.php';
 
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-090914-5c508e1b02a34fcce879a999574cf5c9-469485398');
+MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
 
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
-$item->title = 'Dispositivo móvil de tienda e-commerce';
+$item->id = 1234;
+$item->title = $_POST['title'];
+$item->description = 'Dispositivo móvil de tienda e-commerce';
 $item->quantity = 1;
-$item->unit_price = 15000;
+$item->picture_url = $_POST['img'];
+$item->unit_price = $_POST['price'];
 $preference->items = array($item);
 $preference->save();
 ?>
