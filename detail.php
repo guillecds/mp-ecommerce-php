@@ -19,9 +19,6 @@ $item->picture_url = $_POST['img'];
 $item->unit_price = $_POST['price'];
 $preference->items = array($item);
 
-
-$preference->external_reference = 'ABCD1234';
-
 $preference->save();
 ?>
 
@@ -161,8 +158,7 @@ $preference->save();
                                       <script
                                        src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                                        data-preference-id="<?php echo $preference->id; ?>"
-                                       data-elements-color="#2D3277"
-                                       data-button-label="Pagar la compra">
+                                       data-elements-color="#2D3277">
                                       </script>
                                     </form>
                                 </div>
