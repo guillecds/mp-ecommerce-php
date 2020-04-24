@@ -21,15 +21,15 @@ $preference->items = array($item);
 
 $preference->payer = array(
    "name" => 'Lalo',
-   "name" => 'Landa',
+   "surname" => 'Landa',
    "email" => 'test_user_63274575@testuser.com',
    "phone" => array(
-    "area_code" => 011,
+    "area_code" => '011',
     "number" => '2222-3333'
    ),
    "identification" => array(
     "type" => 'DNI',
-    "number" => 22333444
+    "number" => '22.333.444'
    ),
    "address" => array(
     "street_name" => 'Falsa',
@@ -40,10 +40,10 @@ $preference->payer = array(
 
 $preference->payment_methods = array(
   "excluded_payment_methods" => array(
-    array("id" => 'amex')
+    "id" => 'amex'
   ),
   "excluded_payment_types" => array(
-    array("id" => 'atm')
+    "id" => 'atm'
   ),
   "installments" => 6
 );
