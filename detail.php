@@ -48,11 +48,6 @@ $preference->payment_methods = array(
   "installments" => '6'
 );
 
-$preference->back_urls = array(
-    "success"=> 'https://guillecds-mp-commerce-php.herokuapp.com/success',
-    "pending"=> 'https://guillecds-mp-commerce-php.herokuapp.com/pending',
-    "failure"=> 'https://guillecds-mp-commerce-php.herokuapp.com/failure'
-);
 
 $preference->external_reference ='1234';
 $preference->save();
