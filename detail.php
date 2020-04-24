@@ -33,8 +33,8 @@ $preference->payer = array(
    ),
    "address" => array(
     "street_name" => 'Falsa',
-    "street_number" => 123,
-    "zip_code" => 1111
+    "street_number" => '123',
+    "zip_code" => '1111'
    )
 );
 
@@ -45,7 +45,7 @@ $preference->payment_methods = array(
   "excluded_payment_types" => array(
     "id" => 'atm'
   ),
-  "installments" => 6
+  "installments" => '6'
 );
 
 $preference->back_urls = array(
@@ -54,7 +54,7 @@ $preference->back_urls = array(
     "failure"=> 'https://guillecds-mp-commerce-php.herokuapp.com/failure'
 );
 
-$preference->external_reference =1234;
+$preference->external_reference ='1234';
 $preference->save();
 ?>
 
