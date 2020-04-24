@@ -54,6 +54,7 @@ $preference->back_urls = array(
     "failure": 'https://guillecds-mp-commerce-php.herokuapp.com/failure'
 );
 
+$preference->external_reference ="1234";
 $preference->save();
 ?>
 
