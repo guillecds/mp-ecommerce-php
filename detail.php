@@ -24,34 +24,34 @@ $preference->payer = array(
    "name" => 'Landa',
    "email" => 'test_user_63274575@testuser.com',
    "phone" => array(
-    "area_code" => "011",
-    "number" => "2222-3333"
+    "area_code" => 011,
+    "number" => '2222-3333'
    ),
    "identification" => array(
-    "type" => "DNI",
-    "number" => "22.333.444"
+    "type" => 'DNI',
+    "number" => 22333444
    ),
    "address" => array(
-    "street_name" => "Falsa",
-    "street_number" => "123",
-    "zip_code" => "1111"
+    "street_name" => 'Falsa',
+    "street_number" => 123,
+    "zip_code" => 1111
    ),
 );
 
 $preference->payment_methods = array(
   "excluded_payment_methods" => array(
-    array("id" => "amex")
+    array("id" => 'amex')
   ),
   "excluded_payment_types" => array(
-    array("id" => "atm")
+    array("id" => 'atm')
   ),
   "installments" => 6
 );
 
 $preference->back_urls = array(
-    "success": "https://guillecds-mp-commerce-php.herokuapp.com/success",
-    "pending": "https://guillecds-mp-commerce-php.herokuapp.com/pending",
-    "failure": "https://guillecds-mp-commerce-php.herokuapp.com/failure"
+    "success": 'https://guillecds-mp-commerce-php.herokuapp.com/success',
+    "pending": 'https://guillecds-mp-commerce-php.herokuapp.com/pending',
+    "failure": 'https://guillecds-mp-commerce-php.herokuapp.com/failure'
 );
 
 $preference->external_reference = 'ABCD1234';
