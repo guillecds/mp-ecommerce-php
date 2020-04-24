@@ -24,17 +24,17 @@ $preference->payer = array(
    "surname" => "Landa",
    "email" => "test_user_63274575@testuser.com",
    "phone" => array(
-    array("area_code" => "011"),
-    array("number" => "2222-3333")
+    "area_code" => "011",
+    "number" => "2222-3333"
    ),
    "identification" => array(
-    array("type" => "DNI"),
-    array("number" => "22.333.444")
+    "type" => "DNI",
+    "number" => "22.333.444"
    ),
    "address" => array(
-    array("street_name" => "Falsa"),
-    array("street_number" => "123"),
-    array("zip_code" => "1111")
+    "street_name" => "Falsa",
+    "street_number" => "123",
+    "zip_code" => "1111"
    )
 );
 
@@ -49,9 +49,9 @@ $preference->payment_methods = array(
 );
 
 $preference->back_urls = array(
-    array("success"=> "https://guillecds-mp-commerce-php.herokuapp.com/success"),
-    array("pending"=> "https://guillecds-mp-commerce-php.herokuapp.com/pending"),
-    array("failure"=> "https://guillecds-mp-commerce-php.herokuapp.com/failure")
+    "success"=> "https://guillecds-mp-commerce-php.herokuapp.com/success",
+    "pending"=> "https://guillecds-mp-commerce-php.herokuapp.com/pending",
+    "failure"=> "https://guillecds-mp-commerce-php.herokuapp.com/failure"
 );
 
 $preference->external_reference ="ABC1234";
