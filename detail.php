@@ -22,7 +22,7 @@ $preference->items = array($item);
 $preference->payer = array(
    "name" => 'Lalo',
    "surname" => 'Landa',
-   "email" => 'test_user_63274575@testuser.com)',
+   "email" => 'test_user_63274575@testuser.com',
    "phone" => array(
     "area_code" => '011',
     "number" => '2222-3333'
@@ -49,9 +49,9 @@ $preference->payment_methods = array(
 );
 
 $preference->back_urls = array(
-    "approved": 'https://guillecds-mp-commerce-php.herokuapp.com/success',
-    "pending": 'https://guillecds-mp-commerce-php.herokuapp.com/pending',
-    "failure": 'https://guillecds-mp-commerce-php.herokuapp.com/failure'
+    "success"=> 'https://guillecds-mp-commerce-php.herokuapp.com/success',
+    "pending"=> 'https://guillecds-mp-commerce-php.herokuapp.com/pending',
+    "failure"=> 'https://guillecds-mp-commerce-php.herokuapp.com/failure'
 );
 
 $preference->external_reference ="1234";
