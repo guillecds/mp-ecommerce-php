@@ -62,6 +62,8 @@ $preference->auto_return = "approved";
 
 
 $preference->save();
+
+print_r($preference);
 ?>
 
 <!DOCTYPE html>
