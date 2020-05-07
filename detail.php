@@ -58,6 +58,7 @@ $preference->auto_return = "approved";
 $preference->external_reference ="ABC1234";
 
 $preference->save();
+
 echo $preference;
 ?>
 
