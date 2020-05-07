@@ -1,30 +1,10 @@
-<?php
-
-function redirect_post($url, array $data)
-{
-    ?>
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <script type="text/javascript">
-            function closethisasap() {
-                document.forms["redirectpost"].submit();
-            }
-        </script>
-    </head>
-    <body onload="closethisasap();">
-    <form name="redirectpost" method="post" action="<? echo $url; ?>">
-        <?php
-        if ( !is_null($data) ) {
-            foreach ($data as $key => $value) {
-                echo '<input type="hidden" name="' . $key . '" value="' . $value . '"> ';
-            }
-        }
-        ?>
-    </form>
-    </body>
-    </html>
-    <?php
-    exit;
-}
-
-redirect_post($_POST["back_url"], $_POST);
+  
+<div class="container m-t-20">
+    <div class="container">
+		  <div class="jumbotron text-center">
+			  <h1 class="display-3">Gracias por su compra!</h1>
+			  <p class="lead"><strong>Pago aprobado</strong> nuestro equipo de postventa revisará el pago y cuando sea acreditado le enviaremos el comprobante de su compra y detalles sobre la entrega de sus articulos.</p>
+			  <hr>
+		</div>
+    </div>
+</div>
