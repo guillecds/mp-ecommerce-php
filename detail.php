@@ -70,7 +70,7 @@ $preference->notification_url = "https://guillecds-mp-commerce.herokuapp.com/not
 
 $preference->save();
 
-print_r($preference);
+//print_r($preference);
 ?>
 
 <!DOCTYPE html>
