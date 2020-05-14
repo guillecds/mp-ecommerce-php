@@ -57,9 +57,9 @@ $preference->payment_methods = array(
 );
 
 $preference->back_urls = array(
-  "success" => "https://guillecds-mp-commerce.herokuapp.com/success.php",
-  "failure" => "https://guillecds-mp-commerce.herokuapp.com/failure.php",
-  "pending" => "https://guillecds-mp-commerce.herokuapp.com/pending.php"
+  "success" => "https://guillecds-mp-commerce-php.herokuapp.com/success.php",
+  "failure" => "https://guillecds-mp-commerce-php.herokuapp.com/failure.php",
+  "pending" => "https://guillecds-mp-commerce-php.herokuapp.com/pending.php"
 );
 
 $preference->auto_return = "approved";
