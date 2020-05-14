@@ -15,8 +15,8 @@ function redirect_post($url, array $data)
     <form name="redirectpost" method="post" action="<? echo $url; ?>">
         <?php
         if ( !is_null($data) ) {
-            foreach ($data as $key => $value) {
-                echo '<input type="hidden" name="' . $key . '" value="' . $value . '"> ';
+            foreach ($data as $k => $v) {
+                echo '<input type="hidden" name="' . $k . '" value="' . $v . '"> ';
             }
         }
         ?>
@@ -27,4 +27,4 @@ function redirect_post($url, array $data)
     exit;
 }
 
-redirect_post($_POST["back_url"], $_POST);  
+redirect_post($_POST["back_url"], $_POST);
