@@ -45,3 +45,4 @@ switch ($type) {
         header("HTTP/1.1 200 OK");
         break;
 }
+?>
