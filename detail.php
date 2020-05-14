@@ -10,7 +10,7 @@ $preference = new MercadoPago\Preference();
 
 //Genero la URL de la img del artículo a comprar
 
-$image_url = 'https://guillecds-mp-commerce-php.herokuapp.com' . trim($_POST['img'], '.');
+$image_url = 'https://guillecds-mp-commerce-php.herokuapp.com/' . trim($_POST['img'], '.');
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
