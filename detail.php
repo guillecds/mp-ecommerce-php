@@ -8,14 +8,18 @@ MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
+//Genero la URL de la img del artículo a comprar
+
+$image_url = 'https://guillecds-mp-commerce-php.herokuapp.com' . trim($_POST['img'], '.');
+
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 
 $item->id = 1234;
 $item->title = $_POST['title'];
-$item->description = 'Dispositivo móvil de tienda e-commerce';
+$item->description = 'Dispositivo móvil de Tienda e-commerce';
 $item->quantity = 1;
-$item->picture_url = $_POST['img'];
+$item->picture_url = $image_url;
 $item->unit_price = $_POST['price'];
 $preference->items = array($item);
 
@@ -60,6 +64,9 @@ $preference->back_urls = array(
 
 $preference->auto_return = "approved";
 
+$preference->external_reference = "ABCD1234";
+
+$preference->notification_url = "https://guillecds-mp-commerce.herokuapp.com/notifications.php";
 
 $preference->save();
 
@@ -203,6 +210,7 @@ $preference->save();
                                        src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                                        data-preference-id="<?php echo $preference->id; ?>"
                                        data-elements-color="#2D3277"
+                                       data-header-color="#2D3277"
                                        data-button-label="Pagar la compra">
                                       </script>
                                     </form>
